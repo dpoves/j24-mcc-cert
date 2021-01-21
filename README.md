@@ -10,4 +10,4 @@ Configuration can be edited via a menu.
 
 ## j24-mcc-cert_option2.sh
 
-The configuration can be edited as a file. Just execute the script and it will generate a configuration file that can be edited. The domain name to generate the certificates from can be given as an argument.
+The configuration can be edited as a file. Just execute the script and it will generate a configuration file that can be edited. The domain name to generate the certificates for can be given as an argument.

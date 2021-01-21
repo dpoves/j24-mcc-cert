@@ -124,7 +124,7 @@ if [ -f "$configfile" ]
                 source $configfile
                 echo
                 echo "Loaded configuration"
-                echo "--------------------"
+                echo "===================="
                 echo "Domain               : $hostname"
                 echo "Country code         : $countryname"
                 echo "Province             : $province"
@@ -185,11 +185,11 @@ echo
 echo "Your files are stored in the current directory."
 echo
 echo "Your certificate key is:"
-echo "------------------------"
+echo "========================"
 cat ${hostname}.key
 echo
 echo "Your CSR is:"
-echo "------------------------"
+echo "========================"
 cat ${hostname}.csr
 echo
 
