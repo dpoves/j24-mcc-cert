@@ -185,10 +185,12 @@ echo
 echo "Your files are stored in the current directory."
 echo
 echo "Your certificate key is:"
+echo "$hostname.key"
 echo "========================"
 cat ${hostname}.key
 echo
 echo "Your CSR is:"
+echo "$hostname.csr"
 echo "========================"
 cat ${hostname}.csr
 echo
