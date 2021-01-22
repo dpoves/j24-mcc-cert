@@ -136,7 +136,6 @@ if [ -f "$configfile" ]
             else
                 display_error_message "Configuration file seems to have been tampered with."
                 error=2
-                exit 0 ####
         fi
 	else # Config file doesn't exist
 		error=3        
