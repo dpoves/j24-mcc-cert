@@ -10,45 +10,45 @@ version=1.0
 
 display_error_message()
 {
-tput rev
-tput setaf 1
-echo $1
-tput sgr0
-sleep 1
+    tput rev
+    tput setaf 1
+    echo $1
+    tput sgr0
+    sleep 1
 }
 
 create_default_configfile()
 {
-echo "Deleting existing configuration file."
-rm $configfile 2>/dev/null
-touch $configfile
-chmod 640 $configfile
-#chown 0:0 $config
+    echo "Deleting existing configuration file."
+    rm $configfile 2>/dev/null
+    touch $configfile
+    chmod 640 $configfile
+    #chown 0:0 $config
 
-#####
-echo "# (c) 2021 David Poves. All rights reserved."> $configfile
-echo>> $configfile
+    #####
+    echo "# (c) 2021 David Poves. All rights reserved."> $configfile
+    echo>> $configfile
 
-echo "# This file's permissions:">> $configfile
-echo "# chmod 640">> $configfile
-echo>> $configfile
+    echo "# This file's permissions:">> $configfile
+    echo "# chmod 640">> $configfile
+    echo>> $configfile
 
-echo "#Common Name (the machine's FQDN) is called as an argument or automatically extracted. It isn't included with the configuration.">> $configfile
-echo>> $configfile
+    echo "#Common Name (the machine's FQDN) is called as an argument or automatically extracted. It isn't included with the configuration.">> $configfile
+    echo>> $configfile
 
-echo 'countryname="GB"'>> $configfile
-echo 'province="Greater London"'>> $configfile
-echo 'city="London"'>> $configfile
-echo 'organisation="Jigsaw24"'>> $configfile
-echo 'organisationalunit="Pre-sales"'>> $configfile
-echo>> $configfile
+    echo 'countryname="GB"'>> $configfile
+    echo 'province="Greater London"'>> $configfile
+    echo 'city="London"'>> $configfile
+    echo 'organisation="Jigsaw24"'>> $configfile
+    echo 'organisationalunit="Pre-sales"'>> $configfile
+    echo>> $configfile
 
-echo '## Optional configuration'>> $configfile
-echo '#email="test@place.com"'>> $configfile
-echo '#password=""'>> $configfile
-echo '#optionalcompanymame=""'>> $configfile
-#####
-echo "New default configuration file created."
+    echo '## Optional configuration'>> $configfile
+    echo '#email="test@place.com"'>> $configfile
+    echo '#password=""'>> $configfile
+    echo '#optionalcompanymame=""'>> $configfile
+    #####
+    echo "New default configuration file created."
 }
 
 ####
